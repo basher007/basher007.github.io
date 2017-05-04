@@ -30,26 +30,9 @@ function init () {
             // Иконка метки будет растягиваться под размер ее содержимого.
             preset: 'islands#blackStretchyIcon'
         });
-        SalesOffice = new ymaps.GeoObject({
-            // Описание геометрии.
-            geometry: {
-                type: "Point",
-		coordinates: [44.202493, 43.135823]
-            },
-            // Свойства.
-            properties: {
-                // Контент метки.
-                iconContent: 'Дополнительный офис'
-            }
-        }, {
-            // Опции.
-            // Иконка метки будет растягиваться под размер ее содержимого.
-            preset: 'islands#blackStretchyIcon'
-        });
 
     myMap.geoObjects
         .add(myGeoObject)
-        .add(SalesOffice)
 
     document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
